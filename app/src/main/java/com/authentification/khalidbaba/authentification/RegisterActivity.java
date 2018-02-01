@@ -30,7 +30,7 @@ import java.util.Map;
 public class RegisterActivity extends Activity {
 
     private static final String TAG = RegisterActivity.class.getSimpleName();
-    public String postUrl = "http://10.6.55.133:8888/project/v1/register";
+    public String postUrl = "http://10.1.22.56:8888/project/v1/register";
 
 
     EditText Email,Name, Password;

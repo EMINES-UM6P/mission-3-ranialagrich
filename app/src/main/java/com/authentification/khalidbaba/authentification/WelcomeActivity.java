@@ -13,9 +13,10 @@ import android.widget.TextView;
 public class WelcomeActivity extends Activity {
 
     //TODO 6 : Declare all variables (TextView, String)
-
+    TextView Password;
     TextView Email;
     String _email;
+    String _password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +26,16 @@ public class WelcomeActivity extends Activity {
         //TODO 7 : Instantiate all objects
 
         Email = (TextView) findViewById(R.id.email);
-
+        Password = (TextView) findViewById(R.id.password);
 
         //TODO 8 : Get the intent content and show the Email in the TextView
 
         Intent i = getIntent();
         _email = i.getStringExtra("Email");
+        _password = i.getStringExtra("Password");
 
         Email.setText(_email);
+        Password.setText(_password);
 
     }
 }
